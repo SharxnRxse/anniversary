@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAPPY ANNIVERSARY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Banner -->
+  <header class="banner">
+    <img src="photos/optimuslogo.png" alt="Transformers Logo" class="logo">
+    <h1>SHARON ❤️ SARHAN</h1>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>"Freedom is the right of all sentient beings — and love is ours!"</h2>
+    <button id="rollout-btn">🔊 AUTOBOTS, ROLL OUT!</button>
+  </section>
+
+  <!-- CountUp -->
+  <section class="countup">
+  <h2>We’ve Been Together For ❤️</h2>
+  <div class="timer">
+    <div class="time-box red">
+      <span id="years">0</span>
+      <p>Years</p>
+    </div>
+    <div class="time-box blue">
+      <span id="months">0</span>
+      <p>Months</p>
+    </div>
+    <div class="time-box silver">
+      <span id="days">0</span>
+      <p>Days</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Gallery Carousel -->
+<section class="gallery">
+  <h2>Our Prime Memories</h2>
+  
+  <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="gallery-item red">
+        <img src="photos/optimus1.jpg" alt="Optimus Prime 1">
+        <div class="caption">❤️FIRST PICTURE TOGETHER❤️</div>
+      </div>
+      <div class="gallery-item blue">
+        <img src="photos/optimus2.jpg" alt="Optimus Prime 2">
+        <div class="caption">Our late nights watching TV</div>
+      </div>
+      <div class="gallery-item silver">
+        <img src="photos/optimus3.jpg" alt="Optimus Prime 3">
+        <div class="caption">❤️ Till All Are One ❤️</div>
+      </div>
+      <div class="gallery-item red">
+        <img src="photos/optimus4.jpg" alt="Optimus Prime 4">
+        <div class="caption">First Movie Together</div>
+      </div>
+      <div class="gallery-item blue">
+        <img src="photos/optimus5.jpg" alt="Optimus Prime 5">
+        <div class="caption">Looking Like We Having Confirmation</div>
+      </div>
+      <div class="gallery-item silver">
+        <img src="photos/optimus6.jpg" alt="Optimus Prime 6">
+        <div class="caption">❤️ One of our first traditionals together❤️</div>
+      </div>
+      <div class="gallery-item red">
+        <img src="photos/optimus7.jpg" alt="Optimus Prime 7">
+        <div class="caption">Visiting Narnia Time</div>
+      </div>
+      <div class="gallery-item blue">
+        <img src="photos/optimus8.jpg" alt="Optimus Prime 8">
+        <div class="caption">We Look Good In Red TOGETHER</div>
+      </div>
+      <div class="gallery-item silver">
+        <img src="photos/optimus9.jpg" alt="Optimus Prime 9">
+        <div class="caption">❤️ FIRST WEDDING TOGETHERRR❤️</div>
+      </div>
+      <div class="gallery-item red">
+        <img src="photos/optimus10.jpg" alt="Optimus Prime 10">
+        <div class="caption">Random pizza night</div>
+      </div>
+      <div class="gallery-item blue">
+        <img src="photos/optimus11.jpg" alt="Optimus Prime 11">
+        <div class="caption">OUR BEAR SWEATERRR❤️❤️❤️</div>
+      </div>
+      <div class="gallery-item silver">
+        <img src="photos/optimus12.jpg" alt="Optimus Prime 12">
+        <div class="caption">❤️ WHEN YOU CAME BACK FROM THAILAND❤️</div>
+      </div>
+      <div class="gallery-item red">
+        <img src="photos/optimus13.jpg" alt="Optimus Prime 13">
+        <div class="caption">WINK WINK</div>
+      </div>
+      <div class="gallery-item blue">
+        <img src="photos/optimus14.jpg" alt="Optimus Prime 14">
+        <div class="caption">After boinkers selfie hehehe</div>
+      </div>
+      <div class="gallery-item silver">
+        <img src="photos/optimus15.jpg" alt="Optimus Prime 15">
+        <div class="caption">❤️CHRISTMASSS❤️</div>
+      </div>
+      <div class="gallery-item red">
+        <img src="photos/optimus16.jpg" alt="Optimus Prime 16">
+        <div class="caption">POST DEEPS KISSES</div>
+      </div>
+      <div class="gallery-item blue">
+        <img src="photos/optimus17.jpg" alt="Optimus Prime 17">
+        <div class="caption">❤️First New Year after YESSS❤️</div>
+      </div>
+      <div class="gallery-item silver">
+        <img src="photos/optimus18.jpg" alt="Optimus Prime 18">
+        <div class="caption">❤️ Always have me laughing ❤️</div>
+      </div>
+      <div class="gallery-item red">
+        <img src="photos/optimus19.jpg" alt="Optimus Prime 19">
+        <div class="caption">BED SELFIEEE</div>
+      </div>
+      <!-- Add more photos here in the same format if you have them -->
+    </div>
+
+    <button class="carousel-btn prev" onclick="prevSlide()">‹</button>
+    <button class="carousel-btn next" onclick="nextSlide()">›</button>
+  </div>
+</section>
+
+  <!-- Notes Section -->
+  <section class="notes-section">
+    <h2>Love Notes & Messages</h2>
+    <div class="note-input-area">
+      <textarea id="noteText" placeholder="Write something sweet for Sarhan... 💙"></textarea>
+      <button id="addNoteBtn">Add Note</button>
+    </div>
+    <ul id="notesList"></ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    ❤️ WITH LOVE, POWERED BY ENERGON | MADE BY SHARON FOR SARHAN ❤️</footer>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="photos/what-ive-done.mp3" autoplay loop></audio>
+  <button id="music-toggle">🔇 Mute</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
